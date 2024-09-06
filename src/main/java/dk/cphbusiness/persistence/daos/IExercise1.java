@@ -6,10 +6,11 @@ import dk.cphbusiness.persistence.entities.Employee;
 
 import java.util.Set;
 
-public interface IEmployeeDAO {
+public interface IExercise1 {
     Set<Employee> getEmployeesByName(String name);
     Set<Employee> getEmployeesByAddress(Address a);
     Set<Employee> getEmployeesByzip(int zip);
     Set<EmployeeDTO> getAllEmployeeDTOs();
     Set<Employee> getAllEmployeesWithSalaryBelow(double amount);
+    Set<Employee> getAverageSalaryByzip(double amount); // Group employees by zip and get average salary
 }
